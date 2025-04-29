@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Landing Page Form</title>
+    <link rel="stylesheet" href="landing_page.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="landing-content">
+            <div class="brand">
+                <h2>Company<span style="color: var(--accent-color);">Logo</span></h2>
+            </div>
+            <h1 class="landing-title">Join Our Network of Industry Professionals</h1>
+            <p class="landing-subtitle">Complete the form to connect with experts in your field and receive exclusive updates on industry trends.</p>
+            
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">✓</div>
+                    <div>Exclusive access to industry resources</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">✓</div>
+                    <div>Connect with like-minded professionals</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">✓</div>
+                    <div>Regular updates on latest trends</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-container">
+            <div class="form-header">
+                <h2 class="form-title">Register Your Interest</h2>
+            </div>
+            <form class="form-content">
+                <div class="form-group">
+                    <label for="fullName" class="required">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contactNumber" class="required">Contact Number</label>
+                    <input type="tel" id="contactNumber" name="contactNumber" placeholder="Enter your phone number" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address" class="required">Address</label>
+                    <textarea id="address" name="address" placeholder="Enter your full address" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="companyName" class="required">Company Name</label>
+                    <input type="text" id="companyName" name="companyName" placeholder="Enter your company name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="emailAddress" class="required">Email Address</label>
+                    <input type="email" id="emailAddress" name="emailAddress" placeholder="Enter your email address" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="department" class="required">Department</label>
+                    <select id="department" name="department" required>
+                        <option value="" disabled selected>Select your department</option>
+                        <option value="hr">HR</option>
+                        <option value="sales">Sales</option>
+                        <option value="development">Development</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="required">Gender</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="other" name="gender" value="prefer-not-to-say">
+                            <label for="other">Prefer not to say</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Registration</button>
+            </form>
+            <div class="form-footer">
+                By submitting this form, you agree to our Privacy Policy and Terms of Service.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
